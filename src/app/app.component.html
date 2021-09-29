@@ -1,0 +1,21 @@
+<p-sidebar [(visible)]="visibleSidebar1" [baseZIndex]="10000" [style]="{width:'20em'}">
+  <h1 style="font-weight:normal">Google Map</h1>
+  <hr>
+  <ul class="list-group">
+    <li class="list-group-item" routerLink="circulo" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Circulo</li>
+    <li class="list-group-item" routerLink="rectangulo" routerLinkActive="active">Rectangulo</li>
+    <li class="list-group-item" routerLink="mapGroundOverlay" routerLinkActive="active">Overlay</li>
+    <li class="list-group-item" routerLink="mapInfo" routerLinkActive="active">MapInfo</li>
+    <li class="list-group-item" routerLink="mapKml" routerLinkActive="active">Kml</li>
+    <li class="list-group-item" routerLink="poligono" routerLinkActive="active">Poligono</li>
+    <li class="list-group-item" routerLink="polyline" routerLinkActive="active">Polyline</li>
+    <li class="list-group-item" routerLink="trafico" routerLinkActive="active">Trafico</li>
+    <li class="list-group-item" routerLink="eventos" routerLinkActive="active">Eventos</li>
+  </ul>
+</p-sidebar>
+<p-button type="button" (click)="visibleSidebar1 = true" icon="pi pi-arrow-right"></p-button>
+<div *ngIf="apiLoaded | async">
+  <router-outlet></router-outlet>
+</div>
+
+

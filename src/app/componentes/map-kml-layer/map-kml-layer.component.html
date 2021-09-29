@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row justify-content-md-center">
+    <div class="col-8">
+      <p-panel header="Kml-Layer">
+        <div class="row justify-content-md-center">
+          <!-- google-maps-demo.component.html -->
+          <google-map height="400px"
+                      width="750px"
+                      [center]="center"
+                      [zoom]="zoom">
+            <map-kml-layer [url]="kmlUrl"></map-kml-layer>
+          </google-map>
+        </div>
+      </p-panel>
+    </div>
+  </div>
+</div>

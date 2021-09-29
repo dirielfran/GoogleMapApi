@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="row justify-content-md-center">
+    <div class="col-8">
+      <p-panel header="Trafico">
+        <div class="row justify-content-md-center">
+          <!-- google-maps-demo.component.html -->
+          <google-map height="400px"
+                      width="750px"
+                      [center]="center"
+                      [zoom]="zoom">
+            <map-traffic-layer [autoRefresh]="false"></map-traffic-layer>
+          </google-map>
+        </div>
+      </p-panel>
+    </div>
+    <div class="col-8">
+      <p-panel header="Bicycling">
+        <div class="row justify-content-md-center">
+          <google-map height="400px"
+                      width="750px"
+                      [center]="center"
+                      [zoom]="zoom">
+            <map-bicycling-layer></map-bicycling-layer>
+          </google-map>
+        </div>
+      </p-panel>
+    </div>
+  </div>
+</div>
+<hr>
+

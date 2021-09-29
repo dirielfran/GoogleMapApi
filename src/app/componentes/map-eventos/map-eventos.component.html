@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="row justify-content-md-center">
+    <div class="col-8">
+      <p-panel header="Map Ground Overlay">
+        <div class="row justify-content-md-center">
+          <google-map
+            height="500px"
+            width="100%"
+            [zoom]="zoom"
+            [center]="center"
+            [options]="options"
+            (mapDblclick)="doubleClick($event)"
+            (centerChanged) = "changeCenter()"
+            (mapDrag)="eventDrag()"
+            (zoomChanged) = "zoomChanged()"
+          ></google-map>
+          <hr>
+          <div class="sizes">
+            <p-button label="Zoom in" (click)="zoomIn()" icon="pi pi-search-plus" styleClass="p-button p-button-rounded p-button-success p-button-sm" ></p-button>
+            <p-button label="Zoom Out" (click)="zoomOut()" icon="pi pi-search-minus" styleClass="p-button p-button-rounded p-button-primary p-button-sm" ></p-button>
+          </div>
+        </div>
+      </p-panel>
+    </div>
+  </div>
+</div>

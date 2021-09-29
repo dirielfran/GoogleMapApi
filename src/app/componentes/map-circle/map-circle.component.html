@@ -1,0 +1,20 @@
+
+<div class="container">
+  <div class="row justify-content-md-center">
+    <div class="col-8">
+      <p-panel header="MapCircle" [toggleable]="true">
+        <div class="row justify-content-md-center">
+          <google-map height="400px"
+                      width="750px"
+                      [center]="center"
+                      [zoom]="zoom">
+            <map-circle [center]="circleCenter"
+                        [radius]="radius"></map-circle>
+          </google-map>
+        </div>
+      </p-panel>
+    </div>
+  </div>
+</div>
+
+
