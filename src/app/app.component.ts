@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import { catchError, map } from 'rxjs/operators';
 import { Observable, of } from 'rxjs';
 import { PrimeNGConfig } from 'primeng/api';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-root',
@@ -21,7 +22,7 @@ export class AppComponent {
   visibleSidebar1: any;
 
   constructor(httpClient: HttpClient, private primengConfig: PrimeNGConfig) {
-    this.apiLoaded = httpClient.jsonp('https://maps.google.com/maps/api/js?sensor=false&libraries=visualization', 'callback')
+    this.apiLoaded = httpClient.jsonp('https://maps.google.com/maps/api/js?key='+environment.apiKey+'&sensor=false&libraries=visualization', 'callback')
         .pipe(
           map(() => true),
           catchError(() => of(false)),
