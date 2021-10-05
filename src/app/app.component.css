@@ -1,0 +1,8 @@
+.list-group-item-warning{
+    background-color: rgb(251, 192, 45);
+}
+
+.list-group-item.active{
+    background-color: rgb(168, 120, 6);
+    border-color: black;
+}

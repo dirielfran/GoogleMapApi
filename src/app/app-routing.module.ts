@@ -42,6 +42,14 @@ export const routes: Routes = [
         path: 'eventos',
         loadChildren: () => import('./componentes/map-eventos/map-eventos.module').then(m => m.MapEventosModule),
       },
+      {
+        path: 'agrupaciones',
+        loadChildren: () => import('./componentes/map-agrupaciones/map-agrupaciones.module').then(m => m.MapAgrupacionesModule),
+      },
+      {
+        path: 'iconosVectoriales',
+        loadChildren: () => import('./componentes/map-icon-vectores/map-icon-vectores.module').then(m => m.MapIconVectoresModule),
+      }
     ]
   }
 ]

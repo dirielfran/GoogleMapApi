@@ -2,18 +2,20 @@
   <h1 style="font-weight:normal">Google Map</h1>
   <hr>
   <ul class="list-group">
-    <li class="list-group-item" routerLink="circulo" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Circulo</li>
-    <li class="list-group-item" routerLink="rectangulo" routerLinkActive="active">Rectangulo</li>
-    <li class="list-group-item" routerLink="mapGroundOverlay" routerLinkActive="active">Overlay</li>
-    <li class="list-group-item" routerLink="mapInfo" routerLinkActive="active">MapInfo</li>
-    <li class="list-group-item" routerLink="mapKml" routerLinkActive="active">Kml</li>
-    <li class="list-group-item" routerLink="poligono" routerLinkActive="active">Poligono</li>
-    <li class="list-group-item" routerLink="polyline" routerLinkActive="active">Polyline</li>
-    <li class="list-group-item" routerLink="trafico" routerLinkActive="active">Trafico</li>
-    <li class="list-group-item" routerLink="eventos" routerLinkActive="active">Eventos</li>
+    <li class="list-group-item list-group-item-warning" routerLink="circulo" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Circulo</li>
+    <li class="list-group-item list-group-item-warning" routerLink="rectangulo" routerLinkActive="active">Rectangulo</li>
+    <li class="list-group-item list-group-item-warning" routerLink="mapGroundOverlay" routerLinkActive="active">Overlay</li>
+    <li class="list-group-item list-group-item-warning" routerLink="mapInfo" routerLinkActive="active">MapInfo</li>
+    <li class="list-group-item list-group-item-warning" routerLink="mapKml" routerLinkActive="active">Kml</li>
+    <li class="list-group-item list-group-item-warning" routerLink="poligono" routerLinkActive="active">Poligono</li>
+    <li class="list-group-item list-group-item-warning" routerLink="polyline" routerLinkActive="active">Polyline</li>
+    <li class="list-group-item list-group-item-warning" routerLink="trafico" routerLinkActive="active">Trafico</li>
+    <li class="list-group-item list-group-item-warning" routerLink="eventos" routerLinkActive="active">Eventos</li>
+    <li class="list-group-item list-group-item-warning" routerLink="agrupaciones" routerLinkActive="active">Agrupaciones</li>
+    <li class="list-group-item list-group-item-warning" routerLink="iconosVectoriales" routerLinkActive="active">Iconos Vectoriales</li>
   </ul>
 </p-sidebar>
-<p-button type="button" (click)="visibleSidebar1 = true" icon="pi pi-arrow-right"></p-button>
+<button pButton type="button" icon="pi pi-arrow-right" (click)="visibleSidebar1 = true" class="p-button-warning"></button>
 <div *ngIf="apiLoaded | async">
   <router-outlet></router-outlet>
 </div>

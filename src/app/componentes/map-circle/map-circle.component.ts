@@ -5,12 +5,9 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './map-circle.component.html',
   styleUrls: ['./map-circle.component.css']
 })
-export class MapCircleComponent implements OnInit {
+export class MapCircleComponent{
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+  constructor() { }  
 
   center: google.maps.LatLngLiteral ={lat: -34.691794375358896, lng:-58.334464425920046};
   zoom = 15;

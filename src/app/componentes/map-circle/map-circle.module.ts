@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { MapCircleRoutingModule } from './map-circle-routing.module';
+import { GoogleMapsModule } from '@angular/google-maps';
 
 
 
@@ -9,7 +10,7 @@ import { MapCircleRoutingModule } from './map-circle-routing.module';
   declarations: [],
   imports: [
     CommonModule,
-    MapCircleRoutingModule
+    MapCircleRoutingModule,
   ]
 })
 export class MapCircleModule { }

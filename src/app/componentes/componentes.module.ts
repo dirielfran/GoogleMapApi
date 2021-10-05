@@ -16,6 +16,8 @@ import {PanelModule} from 'primeng/panel';
 import { MapEventosComponent } from './map-eventos/map-eventos.component';
 import { MapEventosModule } from './map-eventos/map-eventos.module';
 import {ButtonModule} from 'primeng/button';
+import { MapAgrupacionesComponent } from './map-agrupaciones/map-agrupaciones/map-agrupaciones.component';
+import { MapIconVectoresComponent } from './map-icon-vectores/map-icon-vectores.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import {ButtonModule} from 'primeng/button';
     MapGroundOverlayComponent,
     MapKmlLayerComponent,
     MapTrafficLayerComponent,
-    MapEventosComponent
+    MapEventosComponent,
+    MapAgrupacionesComponent,
+    MapIconVectoresComponent
   ],
   imports: [
     CommonModule,
