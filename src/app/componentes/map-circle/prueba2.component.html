@@ -1,0 +1,45 @@
+
+<div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-8">
+        <p-panel header="Cambio de Ruta" [toggleable]="false">
+          <div class="row justify-content-md-center">
+            <google-map [center]="center.position" [zoom]="12" [options]="options" #map width="100%" height="400px">
+                <map-directions-renderer *ngIf="(directionsDisplay1 | async) as _directionsDisplay"
+                    [directions]="_directionsDisplay" [options]="displayOptions"></map-directions-renderer>
+                <map-marker #marker="mapMarker" [icon]="icon_green" *ngFor="let data of dataArray1;let i=index" [position]="data.position"
+                    (mapRightclick)="open(marker,i,1)">
+                    <map-info-window>
+                        <div class="row m-1">
+                            <label class="my-1">Rutas</label>
+            
+                        <select (change)="cambiar($event)">
+                            <option [selected]="info==='1'" value="1">Ruta 1</option>
+                            <option [selected]="info==='2'" value="2">Ruta 2</option>
+                        </select>
+                    </div>
+                    </map-info-window>
+                </map-marker>
+            
+                <map-directions-renderer *ngIf="(directionsDisplay2 | async) as _directionsDisplay"
+                    [directions]="_directionsDisplay" [options]="displayOptions"></map-directions-renderer>
+                <map-marker #marker="mapMarker" [icon]="icon_yellow" *ngFor="let data of dataArray2;let i=index" [position]="data.position"
+                    (mapRightclick)="open(marker,i,2)">
+                    <map-info-window>
+                        <div class="row m-1">
+                        <label class="my-1">Rutas</label>
+                        <select>
+                            <option [selected]="info==='1'" value="1">Ruta 1</option>
+                            <option [selected]="info==='2'" value="2">Ruta 2</option>
+                        </select>
+                    </div>
+                    </map-info-window>
+                </map-marker>
+            </google-map>
+            
+          </div>
+        </p-panel>
+      </div>
+    </div>
+  </div>
+  
