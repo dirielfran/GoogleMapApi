@@ -1,1 +1,15 @@
 
+body{
+    background-color: rgb(233, 231, 231) ;
+}
+
+@font-face {
+    font-family: icomoon;
+    src: url(./assets/Font/IcoMoon-Ultimate.ttf) format("opentype");
+  }
+
+* {
+    box-sizing: border-box;
+    font-family: 'icomoon', 'arial', sans-serif;
+}
+  

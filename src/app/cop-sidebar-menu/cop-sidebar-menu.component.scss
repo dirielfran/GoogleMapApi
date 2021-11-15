@@ -1,0 +1,72 @@
+.list-group-item-warning{
+    background-color: rgb(251, 192, 45);
+}
+
+.list-group-item.active{
+    background-color: rgb(168, 120, 6);
+    border-color: black;
+}
+
+.list-group-item{
+    border: 1px solid rgba(252, 248, 248, 0.125);
+}
+
+.list-group-sub-item{
+    background-color: rgba(200, 200, 200, 0.2);
+    border-radius: 3px;
+    margin: 10px 15px 0;
+}
+
+li.list-group-sub-item:hover{
+    background-color: rgba(250, 246, 246, 0.2);
+    border-radius: 3px;
+    margin: 10px 15px 0;
+}
+
+.header{
+    display: inline-block;
+}
+
+p{
+    margin-left: 2rem;
+}
+
+* {
+    margin: 0;
+}
+
+aside{
+    /*transition: all 0.3s;*/
+}
+
+div.scroll_vertical {
+	height: 500px;
+	width: 114px;
+	overflow: auto;
+	background-color: transparent;
+}
+
+
+
+ul.acorh li ul {
+    max-height: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    transition: .5s all ease-in;
+}
+
+
+ul.acorc li li:last-child a {
+    border-bottom: 15;
+}
+
+ul.acorh li:hover ul {
+    max-height: 300px;
+    transition: .5s all ease-in;
+}
+ul.acorh li a:hover {
+    background: #666;
+    color: #fff;
+}

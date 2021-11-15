@@ -9,10 +9,16 @@ import { HttpClientModule, HttpClientJsonpModule } from '@angular/common/http';
 import { ComponentesModule } from './componentes/componentes.module';
 import { ButtonModule } from 'primeng/button';
 import { SidebarModule } from 'primeng/sidebar';
-
+import {ImageModule} from 'primeng/image';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { CopSidebarMenuComponent } from './cop-sidebar-menu/cop-sidebar-menu.component';
+import {ScrollPanelModule} from 'primeng/scrollpanel';
+import {AccordionModule} from 'primeng/accordion';
 @NgModule({
   declarations: [
     AppComponent,
+    SidebarComponent,
+    CopSidebarMenuComponent,
   ],
   imports: [
     BrowserModule,
@@ -22,7 +28,10 @@ import { SidebarModule } from 'primeng/sidebar';
     HttpClientJsonpModule,
     ComponentesModule,
     SidebarModule,
-    ButtonModule
+    ButtonModule,
+    ImageModule,
+    ScrollPanelModule,
+    AccordionModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,21 @@
+
+  <aside [style.width]="width">
+    <p-image src="assets/prosegur.png" alt="Image" width="50rem" (click)="bandera?eventoHide():eventoShow()"></p-image><h5 class="header"><p [style.display]="display" >Prosegur</p></h5>
+
+    <div class="scroll_vertical" [style.width]="width">
+   <ul class="list-group acorh">
+        <li *ngFor="let menu of menuItems" 
+            class="list-group-item list-group-item-warning" 
+            routerLink="{{menu.path}}" 
+            routerLinkActive="active" 
+            [routerLinkActiveOptions]="{exact:true}">
+                <i class="ico {{menu.icontype}}"></i>
+                <p [style.display]="display">{{menu.title}}</p>
+            <ul *ngIf="menu.children?.length > 0" >
+                <li *ngFor="let subm of menu.children" routerLink="{{menu.path}}" class="list-group-item list-group-sub-item">{{subm.title}}</li>
+            </ul>
+        </li>
+      </ul>
+    </div>
+  </aside>
+

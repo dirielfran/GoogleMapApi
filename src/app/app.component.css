@@ -1,8 +1,22 @@
-.list-group-item-warning{
-    background-color: rgb(251, 192, 45);
+.container{
+    padding-left: 0px;
+    margin: 0px;
+    display: flex;
+    height: calc(100vh);
+    background-color: rgb(233, 231, 231);
+    max-width: 100%;
+}
+.container .main-body{
+    width: 100%;
 }
 
-.list-group-item.active{
-    background-color: rgb(168, 120, 6);
-    border-color: black;
-}
+
+
+/*Im using hover event to expand sidebar for example, you can use JS to handle click event*/
+/*.container:hover aside{
+    width: 200px;
+}*/
+
+/*.container:hover p{
+    display: inline-block !important;
+}*/
